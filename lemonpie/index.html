@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Javascript,jQueryの練習</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburgers.css">
+</head>
+<body>
+  <header class="page-header">
+  <div class="container">
+  <h1>レモンパイ</h1>
+  <p class="hamburger hamburger--collapse" type="button" id="btn">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </p>
+  <nav id="g-nav">
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#gallery">ギャラリー</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+  </nav><!-- /.g-nav -->
+</div><!-- /.container -->
+</header><!-- /.page-header -->
+
+<main class="main-content">
+  <div class="container">
+    <h2><i id="menu" class="fa fa-square" aria-hidden="true"></i>スライダー</h2>
+  </div><!-- /.container -->
+    <ul class="bxslider">
+      <li><img src="img/01.jpg" /></li>
+      <li><img src="img/02.jpg" /></li>
+      <li><img src="img/03.jpg" /></li>
+      <li><img src="img/04.jpg" /></li>
+    </ul>
+    <div class="container">
+    <h2><i id="gallery" class="fa fa-square" aria-hidden="true"></i>モーダルウィンドウ</h2>
+    <div class="wrapper">
+      <p><a href="img/08.jpg" data-lightbox="lemon" data-title="OPEN看板"><img src="img/08.jpg" alt=""></a></p>
+      <p><a href="img/07.jpg" data-lightbox="lemon" data-title="店内"><img src="img/07.jpg" alt=""></a></p>
+      <p><a href="img/06.jpg" data-lightbox="lemon" data-title="ピザ"><img src="img/06.jpg" alt=""></a></p>
+      <p><a href="img/05.jpg" data-lightbox="lemon" data-title="ケーキ"><img src="img/05.jpg" alt=""></a></p>
+      </div><!-- /.wrapper -->
+
+      <h2><i id="access" class="fa fa-square" aria-hidden="true"></i>アコーディオンパネル</h2>
+      <div class="content">
+        <dl class="accordion">
+          <dt>今日の日付・曜日</dt>
+          <dd id="now">2020/10/1 (木)</dd>
+          <dt>今日の運勢</dt>
+          <dd id="foutune">大吉</dd>
+          <dt>現在の位置</dt>
+          <dd class="map">
+            <div class="map-container">
+              <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.0345936169024!2d139.71350231460653!3d35.72536773515874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6be1f56ec1%3A0x44d0e4b6ea15cb9f!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yS5LiB55uu77yW4oiS77yR77yQIOODl-ODquODouODl-ODqeODvOODiOODk-ODqw!5e0!3m2!1sja!2sjp!4v1601519547820!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </dd>
+        </dl>
+      </div><!-- /.content -->
+      <p id="to-top-btn" ><a href="#"><img src="img/to-top.svg" alt=""></a></p>
+    </div><!-- /.container -->
+</main><!-- /.main-content -->
+<footer class="page-footer">
+  <p><small>高橋 楓</small></p>
+</footer><!-- /.page-footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
